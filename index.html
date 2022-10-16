@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fa fa-bars menu-btn"></i>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="images/logo.svg" />
+            <nav class="navbar">
+
+                <a href="#" class="closebtn">&times;</a>
+                <ul class="left-menu">
+                    <li>
+                        <a href="#">Features <i class="fa fa-angle-down	"></i></a>
+                    </li>
+                    <li>
+                        <a href>
+                            Company <i class="fa fa-angle-down	"></i>
+                        </a>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+
+                </ul>
+                <ul class="right-menu">
+                    <li><a href="#">Login</a></li>
+                    <li><button class="register-btn">Register</button></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="text">
+                <h1><span>Make</span> remote work</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati excepturi aspernatur cum
+                    blanditiis autem sequi omnis totam optio laudantium illo!</p>
+                <button class="text-btn">Learn More</button>
+                <div class="images">
+                    <img src="images/client-audiophile.svg" alt="">
+                    <img src="images/client-databiz.svg" alt="">
+                    <img src="images/client-maker.svg" alt="">
+                    <img src="images/client-meet.svg" alt="">
+                </div>
+            </div>
+            <img src="images/image-hero-desktop.png" alt="">
+        </div>
+    </section>
+
+    <script>
+        let menuBtn = document.querySelector('.menu-btn')
+        let closeBtn = document.querySelector('.closebtn')
+        let navbar = document.querySelector('.navbar')
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('show')
+        })
+        closeBtn.addEventListener('click', () => {
+            navbar.classList.toggle('show')
+        })
+    </script>
+</body>
+
+</html>
